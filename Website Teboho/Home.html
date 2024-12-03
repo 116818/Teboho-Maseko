@@ -8,42 +8,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <header class="bg-dark text-white text-center py-5">
-        <h1>TEBOHO MASEKO</h1>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <img src="/images/Teboho.JPG" alt="Teboho Maseko" class="img-fluid" style="width: 300px; height: auto; margin-right: 20px;">
-    </header>
-
+    <header class="video-header">
+        <!-- Video Background -->
+        <video autoplay muted loop class="background-video">
+            <source src="images/MySiteVid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Content Above Video -->
+        <div class="header-content text-center">
+            <h1 class="text-white">Teboho Maseko</h1>
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand text-white" href="#">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>  <img src="images/Teboho.JPG" alt="Teboho Maseko" class="img-fluid rounded-circle profile-pic">
+    <hr class="custom-hr">
     <div class="container my-5">
         <section id="about">
             <h2>About Me</h2>
-            <p>I am a passionate developer with skills in end user computing and system development. I enjoy creating functional and user-friendly applications.<br>I have good skills and knowledge in microsoft applications and i am current studying towards Cybersecurity.
-            </p>
-            <p>In high school i studied commerce and this is whereby i got to realise that i have the ability to adapt to change in terms of my studies because <br>at that time our school came up with a new system whereby they choose a stream for every learner from grade 9 going to grade10.
-                <br>I did my matric in 2022 and passed well and i'm currently looking to improve my career in two feilds which is Information technology and Accounting science because i am a person who prefers challenges and i believe that both these fields will give me the energy i want and keep my mind <br> sharper.
-             </p>
+            <p>I am a passionate developer with skills in end user computing and system development. I enjoy creating functional and user-friendly applications.<br>I have good skills and knowledge in Microsoft applications, and I am currently studying towards Cybersecurity.</p>
+            <p>In high school, I studied commerce, and this is when I realized that I can adapt to change. For example, our school introduced a new system where they assigned a stream to each student from grade 9 to grade 10.<br>I completed my matric in 2022 and passed well. Now, I am focusing on two fields: Information Technology and Accounting Science, which will challenge me and keep me sharp.</p>
         </section>
-
+        <hr class="custom-hr">
         <section id="projects" class="my-5">
             <h2>Projects</h2>
             <div class="row">
@@ -53,12 +55,16 @@
                             <h5 class="card-title">End-user Computing</h5>
                             <p class="card-text">Skilled in various Microsoft applications, including:</p>
                             <ul>
-                            <li>Microsoft Word: Document creation and formatting</li>
-                            <li>Microsoft Excel: Data analysis, formulas, and pivot tables</li>
-                            <li>Microsoft PowerPoint: Creating engaging presentations</li>
-                            <li>Microsoft Access: Database management and report generation</li>
+                                <li>Microsoft Word: Document creation and formatting</li>
+                                <li>Microsoft Excel: Data analysis, formulas, and pivot tables</li>
+                                <li>Microsoft PowerPoint: Creating engaging presentations</li>
+                                <li>Microsoft Access: Database management and report generation</li>
                             </ul>
                             <p>These skills have enabled me to effectively manage data and present information clearly.</p>
+                            <a href="https://1drv.ms/w/c/e8889974f8ded98e/EdEIYcMKu-ZLsz2GyIEBPQwBOs1AN8usGLW2K8oaZnf-yw?e=AqOvA2" class="btn btn-primary mb-2">View Project Word</a>
+                            <a href="https://1drv.ms/x/c/e8889974f8ded98e/EYBXqw7qn21CiZI1Ghrsz6IB-nXTtn5DpPMHDdcDgPT89w?e=ChgvLn" class="btn btn-primary mb-2">View Project Excel</a>
+                            <a href="https://1drv.ms/p/c/e8889974f8ded98e/EXW2n0YKq-1KuUz63V9PLfYBehkk198DCL7yYYnpZVUWuw?e=tiOloL" class="btn btn-primary mb-2">View Project PowerPoint</a>
+                            <a href="" class="btn btn-primary mb-2">View Project Access</a>
                         </div>
                     </div>
                 </div>
@@ -66,7 +72,7 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <h5 class="card-title">System Development</h5>
-                            <p class="card-text">I have learnt may basics of coding but i have managed to practicalise and gained experience more on HTML</p>
+                            <p class="card-text">I have learned many basics of coding but have gained more experience through practicals, especially in HTML.</p>
                             <ul>
                                 <li>Creating a personal webpage to showcase my skills and experiences.</li>
                                 <li>Building a simple landing page for a fictional product.</li>
@@ -76,12 +82,12 @@
                         </div>
                     </div>
                 </div>
-                <!-- Add more projects as needed -->
             </div>
         </section>
+        <hr class="custom-hr">
         <section id="contact" class="my-5">
             <h2>Contact Me</h2>
-            <form>
+            <form method="POST" action="submit_form.php">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" class="form-control" id="name" required>
@@ -99,6 +105,12 @@
         </section>
     </div>
 
+    <div class="card-body">
+        <p><strong>Email:</strong> tebohomaseko181@gmail.com</p>
+        <p><strong>Phone:</strong> +27 65 567 2320</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">www.linkedin.com/in/teboho-maseko-0152722a2</a></p>
+    </div>
+
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Teboho Maseko</p>
     </footer>
@@ -108,3 +120,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+

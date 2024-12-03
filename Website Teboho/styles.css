@@ -1,42 +1,117 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* General body styling */
+body, html {
     margin: 0;
     padding: 0;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
     width: 100%;
+    height: 100%;
+}
+
+/* Video Header Section */
+.video-header {
+    position: relative;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+}
+
+/* Video Background */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video fills the header area */
+    z-index: -1; /* Places video behind content */
+}
+
+/* Header Content Styling */
+.header-content {
+    position: relative;
+    z-index: 1; /* Keeps content above the video */
+    top: 50%; /* Centers content vertically */
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+}
+/* Name Styling */
+.header-content h1 {
+    font-size: 3rem; /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    color: white; /* Ensure it remains visible */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+    margin-top: 20px; /* Adjust spacing if needed */
+}
+
+/* Profile Image */
+.profile-img {
+    width: 10px; /* Adjust to make the picture smaller */
+    height: 10px; /* Keep it proportional to maintain the circular shape */
+    margin: 5px auto; /* Center the image */
+    border: 2px solid white; /* Border thickness for emphasis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for visual effect */
+    border-radius: 50%; /* Ensures the image remains circular */
+}
+
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa !important;
+}
+/* Navigation Bar Styling */
+.navbar {
+    height: 150px; /* Adjust the height of the navbar */
+    padding: 0 20px; /* Add padding for more spacing */
+    font-size: 1.2rem; /* Increase the font size of the links */
+    background-color: rgba(0, 0, 0, 0.6); /* Ensure background remains semi-transparent */
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+    margin: 0 15px; /* Add spacing between links */
+    padding: 10px 15px; /* Add padding inside each link */
+    color: white !important; /* Ensure links are white */
+    font-weight: thin; /* Make links bold */
+}
+
+/* Navigation Links on Hover */
+.navbar-nav .nav-link:hover {
+    color: #f0f0f0 !important; /* Lighten the hover color */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 3.5rem; /* Increase brand size */
+    font-weight: bold;
+    color: white;
+}
+/* Custom Horizontal Line */
+.custom-hr {
+    width: 90%; /* Adjust width as needed */
+    height: 10px; /* Make the line bold */
+    background-color: white; /* Line color */
+    border: none; /* Remove default border */
+    margin: 50px auto; /* Center the line and add spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for a 3D effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header-content {
+        top: 40%; /* Adjust positioning for smaller screens */
+    }
+
+    .profile-img {
+        width: 50px;
+        height: 10px;
+    }
 }

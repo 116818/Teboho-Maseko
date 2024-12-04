@@ -157,3 +157,13 @@ body, html {
     margin: 20px auto; /* Center the image */
     display: block; /* Center the block element */
 }
+/* Styling for About Me Image */
+.about-img {
+    width: 800px; /* Adjust the size to your preference */
+    height: 500px; /* Make it square */
+    border-radius: 10%; /* Optional: Rounded corners for a softer look */
+    border: 3px solid #ece6e6; /* Optional: border around the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: shadow for emphasis */
+    margin: 20px auto; /* Center the image */
+    display: block; /* Center the block element */
+}

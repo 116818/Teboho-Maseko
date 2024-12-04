@@ -5,14 +5,12 @@ body, html {
     width: 100%;
     height: 100%;
 }
-
 /* Video Header Section */
 .video-header {
     position: relative;
     height: 100vh; /* Full screen height */
     overflow: hidden;
 }
-
 /* Video Background */
 .background-video {
     position: absolute;
@@ -23,14 +21,13 @@ body, html {
     object-fit: cover; /* Ensures video fills the header area */
     z-index: -1; /* Places video behind content */
 }
-
 /* Header Content Styling */
 .header-content {
     position: relative;
     z-index: 1; /* Keeps content above the video */
     top: 50%; /* Centers content vertically */
     transform: translateY(-50%);
-    color: white;
+    color: rgb(66, 62, 62);
     text-align: center;
 }
 /* Name Styling */
@@ -41,18 +38,40 @@ body, html {
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
     margin-top: 20px; /* Adjust spacing if needed */
 }
+/* Container for the Profile Image */
+.profile-container {
+    margin: 10px auto; /* Centers the container */
+    text-align: center; /* Ensures the image is centered */
+}
 
 /* Profile Image */
 .profile-img {
-    width: 10px; /* Adjust to make the picture smaller */
-    height: 10px; /* Keep it proportional to maintain the circular shape */
-    margin: 5px auto; /* Center the image */
-    border: 2px solid white; /* Border thickness for emphasis */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for visual effect */
-    border-radius: 50%; /* Ensures the image remains circular */
+    width: 400px; /* Set the desired image width to make it smaller */
+    height: 400px; /* Set height proportional to the width for a square image */
+    border: 3px solid rgb(101, 99, 99); /* Clean border */
+    border-radius: 50%; /* Ensures the image is circular */
+    box-shadow: 0 4px 8px rgba(15, 14, 14, 0.5); /* Optional shadow for emphasis */
+    display: inline-block; /* Ensures proper centering within the container */
 }
 
+/* Smaller Profile Image (if you need an alternate size) */
+.profile-pic {
+    width: 400px; /* Adjust width to make it smaller */
+    height: 400px; /* Same as width to make it square */
+    object-fit: cover; /* Ensures the image scales properly within the square */
+    border: 2px solid #000; /* Optional: Adds a border around the image */
+    display: block; /* Make the image block-level so margin can be applied */
+    margin: 0 auto; /* Center the image horizontally */
+}
 
+/* Separator Line Below the Image */
+.separator {
+    border: 0;
+    height: 2px;
+    background-color: #333; /* Adjust the color for better aesthetics */
+    width: 80%; /* Adjust width to match your design */
+    margin: 20px auto; /* Centers the line */
+}
 /* Navigation Bar */
 .navbar {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
@@ -98,7 +117,7 @@ body, html {
 .custom-hr {
     width: 90%; /* Adjust width as needed */
     height: 10px; /* Make the line bold */
-    background-color: white; /* Line color */
+    background-color: rgb(165, 165, 165); /* Line color */
     border: none; /* Remove default border */
     margin: 50px auto; /* Center the line and add spacing */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for a 3D effect */
@@ -114,4 +133,27 @@ body, html {
         width: 50px;
         height: 10px;
     }
+}
+/* Black Background */
+.black-bg {
+    background-color: black; /* Black background */
+    color: white; /* White text to contrast */
+    padding: 20px 0; /* Optional padding for better spacing */
+}
+
+.card {
+    background-color: #1a1a1a; /* Dark background for cards */
+    color: white; /* White text inside cards */
+    border: none; /* Remove card border */
+}
+/* Styling for the image */
+.profile-image {
+    width: 100%; /* Make the image responsive */
+    max-width: 600px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border: 3px solid #f3f2f2; /* Optional: adds a border */
+    border-radius: 0px; /* Optional: rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: shadow for emphasis */
+    margin: 20px auto; /* Center the image */
+    display: block; /* Center the block element */
 }
